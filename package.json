@@ -1,8 +1,9 @@
 {
 	"name": "node-ts-template",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "node.js + eslint + prettier + jest + typescript ES2020 - template",
-	"main": "index.js",
+	"main": "dist/index.js",
+	"typings": "typings/index.d.ts",
 	"scripts": {
 		"dev": "nodemon",
 		"lint": "npx eslint . --ext .ts,.tsx",

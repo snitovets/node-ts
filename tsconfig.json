@@ -3,8 +3,14 @@
 		"lib": ["ES2020"],
 		"module": "CommonJS",
 		"target": "ES2020",
-		"outDir": "lib/",
-		"rootDir": "src/"
+		"outDir": "dist/",
+		"rootDir": "src/",
+		"esModuleInterop": true,
+		"importHelpers": true,
+		"baseUrl": ".",
+		"paths": {
+			"typings": ["typings"]
+		}
 	},
-	"exclude": ["node_modules", "lib", "src/__tests__"]
+	"exclude": ["node_modules", "src/__tests__"]
 }
