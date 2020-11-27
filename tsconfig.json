@@ -5,6 +5,7 @@
 		"target": "ES2020",
 		"outDir": "build/",
 		"rootDir": "src/",
+		"declaration": true,
 		"esModuleInterop": true,
 		"importHelpers": true,
 		"baseUrl": ".",
@@ -12,5 +13,5 @@
 			"typings": ["typings"]
 		}
 	},
-	"exclude": ["node_modules"]
+	"exclude": ["node_modules", "src/test/**"]
 }
