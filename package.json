@@ -20,25 +20,27 @@
 		"clean": "del-cli ./build/*",
 		"build": "npm run clean && tsc",
 		"lint": "npx eslint . --ext .ts,.tsx",
-		"test": "jest --coverage"
+		"test": "jest --watchAll --no-cache --coverage",
+		"test:ci": "jest --ci"
 	},
 	"author": "Vitaly Snitovets",
 	"license": "UNLICENSED",
 	"devDependencies": {
-		"@types/jest": "^26.0.14",
+		"@types/jest": "^26.0.15",
+		"@types/supertest": "^2.0.10",
+		"jest": "^26.6.3",
+		"mongodb-memory-server": "^6.9.2",
+		"supertest": "^6.0.1",
+		"ts-jest": "^26.4.4",
 		"@typescript-eslint/eslint-plugin": "^4.4.1",
 		"@typescript-eslint/parser": "^4.4.1",
-		"del-cli": "^3.0.1",
 		"eslint": "^7.11.0",
 		"eslint-config-prettier": "^6.12.0",
-		"eslint-plugin-jest": "^24.1.0",
-		"jest": "^26.5.3",
-		"nodemon": "^2.0.5",
-		"ts-jest": "^26.4.1",
-		"ts-node": "^9.0.0",
-		"typescript": "^4.0.3"
+		"eslint-plugin-jest": "^24.1.0"
 	},
 	"dependencies": {
-		"tslib": "^2.0.3"
+		"nodemon": "^2.0.6",
+		"ts-node": "^9.0.0",
+		"typescript": "^4.1.2"
 	}
 }

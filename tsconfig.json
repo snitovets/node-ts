@@ -12,6 +12,5 @@
 		"paths": {
 			"typings": ["typings"]
 		}
-	},
-	"exclude": ["node_modules", "src/test/**"]
+	}
 }
